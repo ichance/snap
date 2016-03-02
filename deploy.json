@@ -1,0 +1,20 @@
+{
+    "apps": [
+        {
+            "name": "snapserver",
+            "max_memory_restart": "2048M",
+            "log_date_format": "YYYY-MM-DD HH:mm:ss SSS",
+            "script": "/alidata/www/scripts/snap/snapserver.js",
+            "out_file": "/alidata/log/node/snapserver.log",
+            "error_file": "/alidata/log/node/snapserver_error.log",
+            "port": "9615",
+            "watch": false,
+            "env": {
+                "PORT": "9615"
+            },
+            "exec_mode": "cluster_mode",
+            "node-args": "--nouse-idle-notification --expose-gc --gc_global --max-old-space-size=4096 --max-new-space-size=2048"
+        }
+    ]
+
+}

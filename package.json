@@ -1,0 +1,11 @@
+{
+  "name": "snap-server",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node snapserver.js"
+  },
+  "dependencies": {
+    "phantomjs": "^1.9.19",
+    "webpage": "^0.3.0"
+  }
+}
